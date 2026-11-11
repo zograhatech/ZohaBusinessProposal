@@ -60,25 +60,14 @@
         pointer-events: auto;
       }
       .logo {
-        width: 40px;
-        height: 40px;
-        display: grid;
-        place-items: center;
-        margin-right: clamp(28px, 5vw, 66px);
-      }
-      .logo svg {
-        width: 38px;
-        height: 38px;
-        transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-      }
-      .logo:hover svg {
-        transform: rotate(90deg);
+        display: none !important;
       }
       .nav__links {
         display: flex;
         gap: clamp(22px, 4.5vw, 58px);
         font-size: 15.5px;
         font-weight: 400;
+        margin-right: auto;
       }
       .nav__links a {
         position: relative;
@@ -717,19 +706,10 @@
   </head>
   <body>
     <!-- LOADER -->
-    <div class="loader" id="loader">
-      <svg viewBox="0 0 40 40" fill="#0d0b1a" aria-label="Loading...">
-        <path d="M20 0c1.2 11.5 8.5 18.8 20 20-11.5 1.2-18.8 8.5-20 20-1.2-11.5-8.5-18.8-20-20C11.5 18.8 18.8 11.5 20 0z" />
-      </svg>
-    </div>
+    <div class="loader" id="loader"></div>
 
     <!-- NAV -->
     <nav class="nav">
-      <a class="logo" href="#top" aria-label="Home">
-        <svg viewBox="0 0 40 40" fill="currentColor">
-          <path d="M20 0c1.2 11.5 8.5 18.8 20 20-11.5 1.2-18.8 8.5-20 20-1.2-11.5-8.5-18.8-20-20C11.5 18.8 18.8 11.5 20 0z" />
-        </svg>
-      </a>
       <div class="nav__links">
         <a href="#about">Inside the class</a>
         <a href="#contact">Ping us</a>
